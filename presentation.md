@@ -1,7 +1,7 @@
 class: center, middle
 
 # Abstractions.
-## And 3 sad tales of the slow app
+## And some sad tales of the slow app
 
 [live presentation](https://alonisser.github.io/abstractions-talk/) <br/>
 [twitter](alonisser@twitter.com), [medium](https://medium.com/@alonisser/)
@@ -248,18 +248,6 @@ So while from the application code perspective "nothing has changed" . LOTS HAS 
 
 # Numbers
 
-.img-container[![Undersea internet cables](./submarine_cables.png)]
-
----
-
-# Numbers
-
-.img-container[![Undersea internet cables](./submarine_laying_cable.jpg)]
-
----
-
-# Numbers
-
 .img-container[![Numbers that every programmer should know](https://camo.githubusercontent.com/77f72259e1eb58596b564d1ad823af1853bc60a3/687474703a2f2f692e696d6775722e636f6d2f6b307431652e706e67)]
 
 from https://gist.github.com/hellerbarde/2843375
@@ -324,6 +312,16 @@ The world is a big place
 
 And networks have real constraints: from routers to the physics limiting the bandwidth and speed of submarine communications cables  
 
+---
+# Networks
+
+.img-container[![Undersea internet cables](./submarine_cables.png)]
+
+---
+
+# Networks
+
+.img-container[![Undersea internet cables](./submarine_laying_cable.jpg)]
 
 ---
 # Networks
@@ -509,6 +507,14 @@ This time with instances we don't even control.
 
 Yes, it was in the Plan specifics, everyone missed it. including, for a while, the support engineers from the provider.
  
+---
+
+# CPU Hell
+
+*Modern processors go to great lengths to preserve the **abstraction** that they are in-order scalar machines that access memory directly, while in fact using a host of techniques including caching, instruction reordering, and speculation to deliver much higher performance than a simple processor could hope to achieve. Meltdown and Spectre are examples of what happens when we reason about security in the context of that abstraction, **and then encounter minor discrepancies between the abstraction and reality**.*
+
+from a [why raspberry pi isn't vulnerable to spectre or meltdown](https://www.raspberrypi.org/blog/why-raspberry-pi-isnt-vulnerable-to-spectre-or-meltdown/)
+
 ---
 
 # Mitigating abstraction disaster
